@@ -29,12 +29,11 @@ int main()
     x[4] = 12;
     y[4] = 5.4;
     
-    cout << "Before Sorting" << endl;          // Output Before Sorting.
-    cout << setw(10) << "x" << " " << setw(10)
-         << "y" << endl;                       // to make values right aligned.
+    cout << "Before Sorting" << endl;                               // Output Before Sorting.
+    cout << setw(10) << "x" << " " << setw(10) << "y" << endl;      // to make values right aligned.
     cout << endl;
     
-    for ( int i = 0; i < 5; i++ )              // loop to output array values.
+    for ( int i = 0; i < 5; i++ )                                   // loop to output array values.
     {
         cout << setw(10) << x[i] << " "
              << setw(10) << y[i] << endl;
@@ -64,10 +63,9 @@ int main()
                 
             }
         }
-        cout.setf(ios::showpoint);               //Forces Decimal Points.
-        cout << setw(10) << setprecision(3)      //Precision for Sig Figs.
-             << x[i] << " " << setw(10)          //Output After Sorting
-             << setprecision(2) << y[i] << endl;
+        cout.setf(ios::showpoint);                              // Forces Decimal Points.
+        cout << setw(10) << setprecision(3) << x[i] << " "      // Output after Sort
+             << setw(10) << setprecision(2) << y[i] << endl;    // In Significant Figures.
     }
     
 }
